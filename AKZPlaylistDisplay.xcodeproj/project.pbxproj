@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		125E53891DB924EF00D51D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53881DB924EF00D51D2D /* main.m */; };
+		125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538B1DB924EF00D51D2D /* AppDelegate.m */; };
+		125E538F1DB924EF00D51D2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538E1DB924EF00D51D2D /* ViewController.m */; };
+		125E53921DB924EF00D51D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E53901DB924EF00D51D2D /* Main.storyboard */; };
+		125E53941DB924EF00D51D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125E53931DB924EF00D51D2D /* Assets.xcassets */; };
+		125E53971DB924EF00D51D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */; };
+		125E53A21DB924F000D51D2D /* AKZPlaylistDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53A11DB924F000D51D2D /* AKZPlaylistDisplayTests.m */; };
+		125E53AD1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		125E539E1DB924F000D51D2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 125E537C1DB924EF00D51D2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125E53831DB924EF00D51D2D;
+			remoteInfo = AKZPlaylistDisplay;
+		};
+		125E53A91DB924F000D51D2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 125E537C1DB924EF00D51D2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125E53831DB924EF00D51D2D;
+			remoteInfo = AKZPlaylistDisplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		125E53841DB924EF00D51D2D /* AKZPlaylistDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKZPlaylistDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		125E53881DB924EF00D51D2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		125E538A1DB924EF00D51D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		125E538B1DB924EF00D51D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		125E538D1DB924EF00D51D2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		125E538E1DB924EF00D51D2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		125E53911DB924EF00D51D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		125E53931DB924EF00D51D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		125E53961DB924EF00D51D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		125E53981DB924EF00D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125E539D1DB924F000D51D2D /* AKZPlaylistDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKZPlaylistDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		125E53A11DB924F000D51D2D /* AKZPlaylistDisplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKZPlaylistDisplayTests.m; sourceTree = "<group>"; };
+		125E53A31DB924F000D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125E53A81DB924F000D51D2D /* AKZPlaylistDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKZPlaylistDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKZPlaylistDisplayUITests.m; sourceTree = "<group>"; };
+		125E53AE1DB924F000D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		125E53811DB924EF00D51D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125E539A1DB924F000D51D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125E53A51DB924F000D51D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		125E537B1DB924EF00D51D2D = {
+			isa = PBXGroup;
+			children = (
+				125E53861DB924EF00D51D2D /* AKZPlaylistDisplay */,
+				125E53A01DB924F000D51D2D /* AKZPlaylistDisplayTests */,
+				125E53AB1DB924F000D51D2D /* AKZPlaylistDisplayUITests */,
+				125E53851DB924EF00D51D2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		125E53851DB924EF00D51D2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				125E53841DB924EF00D51D2D /* AKZPlaylistDisplay.app */,
+				125E539D1DB924F000D51D2D /* AKZPlaylistDisplayTests.xctest */,
+				125E53A81DB924F000D51D2D /* AKZPlaylistDisplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		125E53861DB924EF00D51D2D /* AKZPlaylistDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				125E538A1DB924EF00D51D2D /* AppDelegate.h */,
+				125E538B1DB924EF00D51D2D /* AppDelegate.m */,
+				125E538D1DB924EF00D51D2D /* ViewController.h */,
+				125E538E1DB924EF00D51D2D /* ViewController.m */,
+				125E53901DB924EF00D51D2D /* Main.storyboard */,
+				125E53931DB924EF00D51D2D /* Assets.xcassets */,
+				125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */,
+				125E53981DB924EF00D51D2D /* Info.plist */,
+				125E53871DB924EF00D51D2D /* Supporting Files */,
+			);
+			path = AKZPlaylistDisplay;
+			sourceTree = "<group>";
+		};
+		125E53871DB924EF00D51D2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				125E53881DB924EF00D51D2D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		125E53A01DB924F000D51D2D /* AKZPlaylistDisplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				125E53A11DB924F000D51D2D /* AKZPlaylistDisplayTests.m */,
+				125E53A31DB924F000D51D2D /* Info.plist */,
+			);
+			path = AKZPlaylistDisplayTests;
+			sourceTree = "<group>";
+		};
+		125E53AB1DB924F000D51D2D /* AKZPlaylistDisplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */,
+				125E53AE1DB924F000D51D2D /* Info.plist */,
+			);
+			path = AKZPlaylistDisplayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		125E53831DB924EF00D51D2D /* AKZPlaylistDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125E53B11DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplay" */;
+			buildPhases = (
+				125E53801DB924EF00D51D2D /* Sources */,
+				125E53811DB924EF00D51D2D /* Frameworks */,
+				125E53821DB924EF00D51D2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKZPlaylistDisplay;
+			productName = AKZPlaylistDisplay;
+			productReference = 125E53841DB924EF00D51D2D /* AKZPlaylistDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		125E539C1DB924F000D51D2D /* AKZPlaylistDisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125E53B41DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplayTests" */;
+			buildPhases = (
+				125E53991DB924F000D51D2D /* Sources */,
+				125E539A1DB924F000D51D2D /* Frameworks */,
+				125E539B1DB924F000D51D2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125E539F1DB924F000D51D2D /* PBXTargetDependency */,
+			);
+			name = AKZPlaylistDisplayTests;
+			productName = AKZPlaylistDisplayTests;
+			productReference = 125E539D1DB924F000D51D2D /* AKZPlaylistDisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		125E53A71DB924F000D51D2D /* AKZPlaylistDisplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125E53B71DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplayUITests" */;
+			buildPhases = (
+				125E53A41DB924F000D51D2D /* Sources */,
+				125E53A51DB924F000D51D2D /* Frameworks */,
+				125E53A61DB924F000D51D2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125E53AA1DB924F000D51D2D /* PBXTargetDependency */,
+			);
+			name = AKZPlaylistDisplayUITests;
+			productName = AKZPlaylistDisplayUITests;
+			productReference = 125E53A81DB924F000D51D2D /* AKZPlaylistDisplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		125E537C1DB924EF00D51D2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Spyridon Chatzikotoulas";
+				TargetAttributes = {
+					125E53831DB924EF00D51D2D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					125E539C1DB924F000D51D2D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 125E53831DB924EF00D51D2D;
+					};
+					125E53A71DB924F000D51D2D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 125E53831DB924EF00D51D2D;
+					};
+				};
+			};
+			buildConfigurationList = 125E537F1DB924EF00D51D2D /* Build configuration list for PBXProject "AKZPlaylistDisplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 125E537B1DB924EF00D51D2D;
+			productRefGroup = 125E53851DB924EF00D51D2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				125E53831DB924EF00D51D2D /* AKZPlaylistDisplay */,
+				125E539C1DB924F000D51D2D /* AKZPlaylistDisplayTests */,
+				125E53A71DB924F000D51D2D /* AKZPlaylistDisplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		125E53821DB924EF00D51D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125E53971DB924EF00D51D2D /* LaunchScreen.storyboard in Resources */,
+				125E53941DB924EF00D51D2D /* Assets.xcassets in Resources */,
+				125E53921DB924EF00D51D2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125E539B1DB924F000D51D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125E53A61DB924F000D51D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		125E53801DB924EF00D51D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125E538F1DB924EF00D51D2D /* ViewController.m in Sources */,
+				125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */,
+				125E53891DB924EF00D51D2D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125E53991DB924F000D51D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125E53A21DB924F000D51D2D /* AKZPlaylistDisplayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125E53A41DB924F000D51D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125E53AD1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		125E539F1DB924F000D51D2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125E53831DB924EF00D51D2D /* AKZPlaylistDisplay */;
+			targetProxy = 125E539E1DB924F000D51D2D /* PBXContainerItemProxy */;
+		};
+		125E53AA1DB924F000D51D2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125E53831DB924EF00D51D2D /* AKZPlaylistDisplay */;
+			targetProxy = 125E53A91DB924F000D51D2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		125E53901DB924EF00D51D2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125E53911DB924EF00D51D2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125E53961DB924EF00D51D2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		125E53AF1DB924F000D51D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		125E53B01DB924F000D51D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		125E53B21DB924F000D51D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKZPlaylistDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AKZPlaylistDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		125E53B31DB924F000D51D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKZPlaylistDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AKZPlaylistDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		125E53B51DB924F000D51D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AKZPlaylistDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AKZPlaylistDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKZPlaylistDisplay.app/AKZPlaylistDisplay";
+			};
+			name = Debug;
+		};
+		125E53B61DB924F000D51D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AKZPlaylistDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AKZPlaylistDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKZPlaylistDisplay.app/AKZPlaylistDisplay";
+			};
+			name = Release;
+		};
+		125E53B81DB924F000D51D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AKZPlaylistDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AKZPlaylistDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AKZPlaylistDisplay;
+			};
+			name = Debug;
+		};
+		125E53B91DB924F000D51D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AKZPlaylistDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.AKZPlaylistDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AKZPlaylistDisplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		125E537F1DB924EF00D51D2D /* Build configuration list for PBXProject "AKZPlaylistDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125E53AF1DB924F000D51D2D /* Debug */,
+				125E53B01DB924F000D51D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125E53B11DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125E53B21DB924F000D51D2D /* Debug */,
+				125E53B31DB924F000D51D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		125E53B41DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125E53B51DB924F000D51D2D /* Debug */,
+				125E53B61DB924F000D51D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		125E53B71DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125E53B81DB924F000D51D2D /* Debug */,
+				125E53B91DB924F000D51D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 125E537C1DB924EF00D51D2D /* Project object */;
+}
