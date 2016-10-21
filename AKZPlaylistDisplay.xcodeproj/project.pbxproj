@@ -10,11 +10,16 @@
 		125E53891DB924EF00D51D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53881DB924EF00D51D2D /* main.m */; };
 		125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538B1DB924EF00D51D2D /* AppDelegate.m */; };
 		125E538F1DB924EF00D51D2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538E1DB924EF00D51D2D /* ViewController.m */; };
-		125E53921DB924EF00D51D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E53901DB924EF00D51D2D /* Main.storyboard */; };
 		125E53941DB924EF00D51D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125E53931DB924EF00D51D2D /* Assets.xcassets */; };
 		125E53971DB924EF00D51D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */; };
 		125E53A21DB924F000D51D2D /* AKZPlaylistDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53A11DB924F000D51D2D /* AKZPlaylistDisplayTests.m */; };
 		125E53AD1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */; };
+		12D7FE341DB9295700BFF096 /* AKZResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE331DB9295700BFF096 /* AKZResults.m */; };
+		12D7FE371DB92B3100BFF096 /* AKZSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE361DB92B3100BFF096 /* AKZSessionManager.m */; };
+		12D7FE3A1DB92C7F00BFF096 /* AKZGetResultsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE391DB92C7F00BFF096 /* AKZGetResultsResponse.m */; };
+		12D7FE3D1DB9317600BFF096 /* AKZConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE3C1DB9317600BFF096 /* AKZConstants.m */; };
+		12EE2A381DB9EB330008C0F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12EE2A371DB9EB330008C0F6 /* Main.storyboard */; };
+		A8B6A0FA01C0276AF6B62C11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 548B187FFC4D141A4B654564 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +46,6 @@
 		125E538B1DB924EF00D51D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		125E538D1DB924EF00D51D2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		125E538E1DB924EF00D51D2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		125E53911DB924EF00D51D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		125E53931DB924EF00D51D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125E53961DB924EF00D51D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125E53981DB924EF00D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,19 @@
 		125E53A81DB924F000D51D2D /* AKZPlaylistDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKZPlaylistDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKZPlaylistDisplayUITests.m; sourceTree = "<group>"; };
 		125E53AE1DB924F000D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D7FE321DB9295700BFF096 /* AKZResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZResults.h; sourceTree = "<group>"; };
+		12D7FE331DB9295700BFF096 /* AKZResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZResults.m; sourceTree = "<group>"; };
+		12D7FE351DB92B3100BFF096 /* AKZSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZSessionManager.h; sourceTree = "<group>"; };
+		12D7FE361DB92B3100BFF096 /* AKZSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZSessionManager.m; sourceTree = "<group>"; };
+		12D7FE381DB92C7F00BFF096 /* AKZGetResultsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZGetResultsResponse.h; sourceTree = "<group>"; };
+		12D7FE391DB92C7F00BFF096 /* AKZGetResultsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZGetResultsResponse.m; sourceTree = "<group>"; };
+		12D7FE3B1DB9317600BFF096 /* AKZConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZConstants.h; sourceTree = "<group>"; };
+		12D7FE3C1DB9317600BFF096 /* AKZConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZConstants.m; sourceTree = "<group>"; };
+		12D7FE3E1DB935BC00BFF096 /* AKZ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKZ.pch; sourceTree = "<group>"; };
+		12EE2A371DB9EB330008C0F6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2C56530893D213CE642B90DB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		548B187FFC4D141A4B654564 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B471AB8D2FF12A59D97B2B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B6A0FA01C0276AF6B62C11 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,8 @@
 				125E53A01DB924F000D51D2D /* AKZPlaylistDisplayTests */,
 				125E53AB1DB924F000D51D2D /* AKZPlaylistDisplayUITests */,
 				125E53851DB924EF00D51D2D /* Products */,
+				DC02320AF6F17FCD1DC5D618 /* Pods */,
+				735D7DCD7713917A3E32E23F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +121,9 @@
 		125E53861DB924EF00D51D2D /* AKZPlaylistDisplay */ = {
 			isa = PBXGroup;
 			children = (
-				125E538A1DB924EF00D51D2D /* AppDelegate.h */,
-				125E538B1DB924EF00D51D2D /* AppDelegate.m */,
-				125E538D1DB924EF00D51D2D /* ViewController.h */,
-				125E538E1DB924EF00D51D2D /* ViewController.m */,
-				125E53901DB924EF00D51D2D /* Main.storyboard */,
-				125E53931DB924EF00D51D2D /* Assets.xcassets */,
-				125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */,
-				125E53981DB924EF00D51D2D /* Info.plist */,
+				12D7FE311DB926E500BFF096 /* Network */,
+				12D7FE301DB926DB00BFF096 /* Views */,
+				12D7FE2F1DB9268100BFF096 /* Resources */,
 				125E53871DB924EF00D51D2D /* Supporting Files */,
 			);
 			path = AKZPlaylistDisplay;
@@ -118,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				125E53881DB924EF00D51D2D /* main.m */,
+				12D7FE3E1DB935BC00BFF096 /* AKZ.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +156,60 @@
 			path = AKZPlaylistDisplayUITests;
 			sourceTree = "<group>";
 		};
+		12D7FE2F1DB9268100BFF096 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12D7FE3B1DB9317600BFF096 /* AKZConstants.h */,
+				12D7FE3C1DB9317600BFF096 /* AKZConstants.m */,
+				125E538A1DB924EF00D51D2D /* AppDelegate.h */,
+				125E538B1DB924EF00D51D2D /* AppDelegate.m */,
+				12EE2A371DB9EB330008C0F6 /* Main.storyboard */,
+				125E53931DB924EF00D51D2D /* Assets.xcassets */,
+				125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */,
+				125E53981DB924EF00D51D2D /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		12D7FE301DB926DB00BFF096 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				125E538D1DB924EF00D51D2D /* ViewController.h */,
+				125E538E1DB924EF00D51D2D /* ViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		12D7FE311DB926E500BFF096 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				12D7FE351DB92B3100BFF096 /* AKZSessionManager.h */,
+				12D7FE361DB92B3100BFF096 /* AKZSessionManager.m */,
+				12D7FE381DB92C7F00BFF096 /* AKZGetResultsResponse.h */,
+				12D7FE391DB92C7F00BFF096 /* AKZGetResultsResponse.m */,
+				12D7FE321DB9295700BFF096 /* AKZResults.h */,
+				12D7FE331DB9295700BFF096 /* AKZResults.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		735D7DCD7713917A3E32E23F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				548B187FFC4D141A4B654564 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC02320AF6F17FCD1DC5D618 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C56530893D213CE642B90DB /* Pods.debug.xcconfig */,
+				61B471AB8D2FF12A59D97B2B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 125E53B11DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplay" */;
 			buildPhases = (
+				3F1C50265C31158F146F4CEA /* Check Pods Manifest.lock */,
 				125E53801DB924EF00D51D2D /* Sources */,
 				125E53811DB924EF00D51D2D /* Frameworks */,
 				125E53821DB924EF00D51D2D /* Resources */,
+				42BB688C19FEBF3632442C9A /* Embed Pods Frameworks */,
+				4DCA3060766C5C3656A62422 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,7 +275,7 @@
 		125E537C1DB924EF00D51D2D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Spyridon Chatzikotoulas";
 				TargetAttributes = {
 					125E53831DB924EF00D51D2D = {
@@ -244,8 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				125E53971DB924EF00D51D2D /* LaunchScreen.storyboard in Resources */,
+				12EE2A381DB9EB330008C0F6 /* Main.storyboard in Resources */,
 				125E53941DB924EF00D51D2D /* Assets.xcassets in Resources */,
-				125E53921DB924EF00D51D2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +338,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F1C50265C31158F146F4CEA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42BB688C19FEBF3632442C9A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCA3060766C5C3656A62422 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		125E53801DB924EF00D51D2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				125E538F1DB924EF00D51D2D /* ViewController.m in Sources */,
+				12D7FE3D1DB9317600BFF096 /* AKZConstants.m in Sources */,
 				125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */,
+				12D7FE371DB92B3100BFF096 /* AKZSessionManager.m in Sources */,
 				125E53891DB924EF00D51D2D /* main.m in Sources */,
+				12D7FE3A1DB92C7F00BFF096 /* AKZGetResultsResponse.m in Sources */,
+				12D7FE341DB9295700BFF096 /* AKZResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +433,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		125E53901DB924EF00D51D2D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				125E53911DB924EF00D51D2D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,8 +458,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -364,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,8 +504,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -402,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -411,6 +532,7 @@
 		};
 		125E53B21DB924F000D51D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C56530893D213CE642B90DB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKZPlaylistDisplay/Info.plist;
@@ -422,6 +544,7 @@
 		};
 		125E53B31DB924F000D51D2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B471AB8D2FF12A59D97B2B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKZPlaylistDisplay/Info.plist;
@@ -496,6 +619,7 @@
 				125E53B31DB924F000D51D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		125E53B41DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplayTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +628,7 @@
 				125E53B61DB924F000D51D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		125E53B71DB924F000D51D2D /* Build configuration list for PBXNativeTarget "AKZPlaylistDisplayUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +637,7 @@
 				125E53B91DB924F000D51D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
