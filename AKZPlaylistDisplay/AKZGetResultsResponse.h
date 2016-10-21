@@ -11,6 +11,6 @@
 
 @interface AKZGetResultsResponse : MTLModel <MTLJSONSerializing>
 
-@property NSArray *Result;
+@property NSArray *result;
 
 @end

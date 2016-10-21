@@ -12,11 +12,11 @@
 
 +(NSDictionary *)JSONKeyPathsByPropertyKey{
     return @{
-             @"Result" : @"Result"
+             @"result" : @"Result"
              };
 }
 
-+(NSValueTransformer *)resultsJSONTransformer{
++(NSValueTransformer *)resultJSONTransformer{
     return [MTLJSONAdapter arrayTransformerWithModelClass:AKZResults.class];
 }
 

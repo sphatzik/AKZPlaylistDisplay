@@ -29,8 +29,8 @@
     
     [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
         [SVProgressHUD dismiss];
-        self.playlistItems = response.Result;
-        NSLog(@"Print Result %@",response.Result);
+        self.playlistItems = response.result;
+        NSLog(@"Print Result %@",response.result);
         [self.tableView reloadData];
     } failure:^(NSError *error) {
         [SVProgressHUD dismiss];
@@ -69,7 +69,7 @@
     UILabel *playlistName = [cell.contentView viewWithTag:1];
     UILabel *itemCount = [cell.contentView viewWithTag:2];
     playlistName.text = playlist.Name;
-    itemCount.text = playlist.ItemCount;
+    itemCount.text = playlist.ItemCount.stringValue;
     
     cell.tag = indexPath.row;
     

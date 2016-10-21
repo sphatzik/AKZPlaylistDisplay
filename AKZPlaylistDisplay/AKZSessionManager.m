@@ -30,8 +30,10 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if(success){
+            NSError *error = nil;
             AKZGetResultsResponse *messageA = [MTLJSONAdapter modelOfClass:AKZGetResultsResponse.class
-                                                            fromJSONDictionary:responseObject error:NULL];
+                                                        fromJSONDictionary:responseObject
+                                                                     error:&error];
             success(messageA);
         }
         
