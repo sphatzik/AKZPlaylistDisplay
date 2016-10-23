@@ -10,19 +10,19 @@
 
 @interface AKZResults : MTLModel <MTLJSONSerializing>
 
-@property(strong, nonatomic)NSString *Name;
-@property (strong, nonatomic)NSNumber *ItemCount;
-@property(strong, nonatomic)NSString *ObjectType;
-@property (strong, nonatomic)NSString *DateUpdated;
-@property(strong, nonatomic)NSNumber *Duration;
-@property (strong, nonatomic)NSNumber *FanCount;
-@property(strong, nonatomic)NSNumber *IsOwner;
-@property (strong, nonatomic)NSString *LargePhotoUrl;
-@property(strong, nonatomic)NSString *OwnerId;
-@property (strong, nonatomic)NSString *OwnerNickName;
-@property (strong, nonatomic)NSString *OwnerPhotoUrl;
-@property(strong, nonatomic)NSString *PhotoUrl;
-@property (strong, nonatomic)NSString *PlaylistId;
-@property (strong, nonatomic)NSNumber *ViewerIsFan;
+@property(strong, nonatomic)NSString *name;
+@property (strong, nonatomic)NSNumber *itemCount;
+@property(strong, nonatomic)NSString *objectType;
+@property (strong, nonatomic)NSString *dateUpdated;
+@property(strong, nonatomic)NSNumber *duration;
+@property (strong, nonatomic)NSNumber *fanCount;
+@property(strong, nonatomic)NSNumber *isOwner;
+@property (strong, nonatomic)NSString *largePhotoUrl;
+@property(strong, nonatomic)NSString *ownerId;
+@property (strong, nonatomic)NSString *ownerNickName;
+@property (strong, nonatomic)NSString *ownerPhotoUrl;
+@property(strong, nonatomic)NSString *photoUrl;
+@property (strong, nonatomic)NSString *playlistId;
+@property (strong, nonatomic)NSNumber *viewerIsFan;
 
 @end

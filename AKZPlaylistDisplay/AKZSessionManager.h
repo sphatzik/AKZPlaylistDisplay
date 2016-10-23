@@ -9,6 +9,8 @@
 #import <AFNetworking/AFNetworking.h>
 #import "AKZResults.h"
 #import "AKZGetResultsResponse.h"
+#import "AKZGetItemsResponse.h"
+#import "AKZItems.h"
 #import "AKZConstants.h"
 
 @interface AKZSessionManager : AFHTTPSessionManager
@@ -18,6 +20,10 @@
 
 -(void)getResults:(void(^)(AKZGetResultsResponse *response))success
              failure:(void(^)(NSError *error))failure;
+
+-(void)getItemsForPlaylist:(AKZResults *)playlistDetail
+                   success:(void(^)(AKZGetItemsResponse *response))success
+                   failure:(void(^)(NSError *error))failure;
 
 
 @end

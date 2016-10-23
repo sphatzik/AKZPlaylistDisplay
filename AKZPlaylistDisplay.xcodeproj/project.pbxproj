@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		125E53891DB924EF00D51D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53881DB924EF00D51D2D /* main.m */; };
 		125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538B1DB924EF00D51D2D /* AppDelegate.m */; };
-		125E538F1DB924EF00D51D2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538E1DB924EF00D51D2D /* ViewController.m */; };
+		125E538F1DB924EF00D51D2D /* AKZPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538E1DB924EF00D51D2D /* AKZPlaylistTableViewController.m */; };
 		125E53941DB924EF00D51D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125E53931DB924EF00D51D2D /* Assets.xcassets */; };
 		125E53971DB924EF00D51D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125E53951DB924EF00D51D2D /* LaunchScreen.storyboard */; };
 		125E53A21DB924F000D51D2D /* AKZPlaylistDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53A11DB924F000D51D2D /* AKZPlaylistDisplayTests.m */; };
 		125E53AD1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */; };
+		12A65A8B1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A65A8A1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m */; };
+		12A65A8E1DBCC8BB00831F41 /* AKZItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A65A8D1DBCC8BB00831F41 /* AKZItems.m */; };
+		12A65A911DBCCD1A00831F41 /* AKZGetItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A65A901DBCCD1A00831F41 /* AKZGetItemsResponse.m */; };
 		12D7FE341DB9295700BFF096 /* AKZResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE331DB9295700BFF096 /* AKZResults.m */; };
 		12D7FE371DB92B3100BFF096 /* AKZSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE361DB92B3100BFF096 /* AKZSessionManager.m */; };
 		12D7FE3A1DB92C7F00BFF096 /* AKZGetResultsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FE391DB92C7F00BFF096 /* AKZGetResultsResponse.m */; };
@@ -44,8 +47,8 @@
 		125E53881DB924EF00D51D2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		125E538A1DB924EF00D51D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		125E538B1DB924EF00D51D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		125E538D1DB924EF00D51D2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		125E538E1DB924EF00D51D2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		125E538D1DB924EF00D51D2D /* AKZPlaylistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKZPlaylistTableViewController.h; sourceTree = "<group>"; };
+		125E538E1DB924EF00D51D2D /* AKZPlaylistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKZPlaylistTableViewController.m; sourceTree = "<group>"; };
 		125E53931DB924EF00D51D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125E53961DB924EF00D51D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125E53981DB924EF00D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +58,12 @@
 		125E53A81DB924F000D51D2D /* AKZPlaylistDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKZPlaylistDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E53AC1DB924F000D51D2D /* AKZPlaylistDisplayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKZPlaylistDisplayUITests.m; sourceTree = "<group>"; };
 		125E53AE1DB924F000D51D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A65A891DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZPlaylistDetailTableViewController.h; sourceTree = "<group>"; };
+		12A65A8A1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZPlaylistDetailTableViewController.m; sourceTree = "<group>"; };
+		12A65A8C1DBCC8BB00831F41 /* AKZItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZItems.h; sourceTree = "<group>"; };
+		12A65A8D1DBCC8BB00831F41 /* AKZItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZItems.m; sourceTree = "<group>"; };
+		12A65A8F1DBCCD1A00831F41 /* AKZGetItemsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZGetItemsResponse.h; sourceTree = "<group>"; };
+		12A65A901DBCCD1A00831F41 /* AKZGetItemsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZGetItemsResponse.m; sourceTree = "<group>"; };
 		12D7FE321DB9295700BFF096 /* AKZResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZResults.h; sourceTree = "<group>"; };
 		12D7FE331DB9295700BFF096 /* AKZResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZResults.m; sourceTree = "<group>"; };
 		12D7FE351DB92B3100BFF096 /* AKZSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZSessionManager.h; sourceTree = "<group>"; };
@@ -174,8 +183,10 @@
 		12D7FE301DB926DB00BFF096 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				125E538D1DB924EF00D51D2D /* ViewController.h */,
-				125E538E1DB924EF00D51D2D /* ViewController.m */,
+				125E538D1DB924EF00D51D2D /* AKZPlaylistTableViewController.h */,
+				125E538E1DB924EF00D51D2D /* AKZPlaylistTableViewController.m */,
+				12A65A891DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.h */,
+				12A65A8A1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -189,6 +200,10 @@
 				12D7FE391DB92C7F00BFF096 /* AKZGetResultsResponse.m */,
 				12D7FE321DB9295700BFF096 /* AKZResults.h */,
 				12D7FE331DB9295700BFF096 /* AKZResults.m */,
+				12A65A8F1DBCCD1A00831F41 /* AKZGetItemsResponse.h */,
+				12A65A901DBCCD1A00831F41 /* AKZGetItemsResponse.m */,
+				12A65A8C1DBCC8BB00831F41 /* AKZItems.h */,
+				12A65A8D1DBCC8BB00831F41 /* AKZItems.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -391,9 +406,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125E538F1DB924EF00D51D2D /* ViewController.m in Sources */,
+				125E538F1DB924EF00D51D2D /* AKZPlaylistTableViewController.m in Sources */,
 				12D7FE3D1DB9317600BFF096 /* AKZConstants.m in Sources */,
 				125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */,
+				12A65A8B1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m in Sources */,
+				12A65A8E1DBCC8BB00831F41 /* AKZItems.m in Sources */,
+				12A65A911DBCCD1A00831F41 /* AKZGetItemsResponse.m in Sources */,
 				12D7FE371DB92B3100BFF096 /* AKZSessionManager.m in Sources */,
 				125E53891DB924EF00D51D2D /* main.m in Sources */,
 				12D7FE3A1DB92C7F00BFF096 /* AKZGetResultsResponse.m in Sources */,

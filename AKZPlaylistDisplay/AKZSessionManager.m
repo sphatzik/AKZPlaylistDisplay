@@ -23,25 +23,50 @@
     return _sharedManager;
 }
 
--(void)getResults:(void (^)(AKZGetResultsResponse *))success failure:(void (^)(NSError *))failure{
+-(void)getResults:(void (^)(AKZGetResultsResponse *))success
+          failure:(void (^)(NSError *))failure{
     [self GET:@"playlists"
    parameters:nil
      progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if(success){
-            NSError *error = nil;
-            AKZGetResultsResponse *messageA = [MTLJSONAdapter modelOfClass:AKZGetResultsResponse.class
-                                                        fromJSONDictionary:responseObject
-                                                                     error:&error];
-            success(messageA);
-        }
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if(failure){
-            failure(error);
-        }
-    }];
+         
+     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+         if(success){
+             NSError *error = nil;
+             AKZGetResultsResponse *messageA = [MTLJSONAdapter modelOfClass:AKZGetResultsResponse.class
+                                                         fromJSONDictionary:responseObject
+                                                                      error:&error];
+             success(messageA);
+         }
+         
+     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+         if(failure){
+             failure(error);
+         }
+     }];
+}
+
+
+
+-(void)getItemsForPlaylist:(AKZResults *)playlistDetail
+                   success:(void (^)(AKZGetItemsResponse *))success
+                   failure:(void (^)(NSError *))failure{
+    [self GET:@"playlists"
+   parameters:@{@"playlistid" : playlistDetail.playlistId}
+     progress:^(NSProgress * _Nonnull downloadProgress) {
+         
+     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+         NSError *error = nil;
+         AKZGetItemsResponse *messageA = [MTLJSONAdapter modelOfClass:AKZGetItemsResponse.class
+                                                   fromJSONDictionary:responseObject
+                                                                error:&error];
+         success(messageA);
+         
+     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+         if(failure){
+             failure(error);
+         }
+     }];
+    
 }
 
 @end

@@ -10,7 +10,7 @@
         <!--Root View Controller-->
         <scene sceneID="cax-1a-frT">
             <objects>
-                <tableViewController id="I1k-pR-c22" customClass="ViewController" sceneMemberID="viewController">
+                <tableViewController id="I1k-pR-c22" customClass="AKZPlaylistTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" id="0aH-Oe-xfC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,16 +23,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-bn-DzX">
-                                            <rect key="frame" x="20" y="21" width="300" height="60"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-bn-DzX">
+                                            <rect key="frame" x="20" y="21" width="457" height="60"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG0-WW-lOv">
-                                            <rect key="frame" x="369" y="21" width="133" height="60"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG0-WW-lOv">
+                                            <rect key="frame" x="498" y="21" width="69" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="133" id="6NU-6a-oZO"/>
+                                                <constraint firstAttribute="width" constant="69" id="6NU-6a-oZO"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -40,15 +40,18 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gG0-WW-lOv" firstAttribute="leading" secondItem="cAx-bn-DzX" secondAttribute="trailing" constant="49" id="04w-oR-VXz"/>
+                                        <constraint firstItem="gG0-WW-lOv" firstAttribute="leading" secondItem="cAx-bn-DzX" secondAttribute="trailing" constant="21" id="04w-oR-VXz"/>
                                         <constraint firstItem="cAx-bn-DzX" firstAttribute="top" secondItem="rqM-u6-JEf" secondAttribute="topMargin" constant="13" id="1cp-3D-qXw"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="gG0-WW-lOv" secondAttribute="trailing" constant="57" id="2xB-o6-V1Y"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gG0-WW-lOv" secondAttribute="trailing" constant="-8" id="2xB-o6-V1Y"/>
                                         <constraint firstItem="cAx-bn-DzX" firstAttribute="centerY" secondItem="rqM-u6-JEf" secondAttribute="centerY" id="Khl-oU-TKc"/>
                                         <constraint firstItem="cAx-bn-DzX" firstAttribute="firstBaseline" secondItem="gG0-WW-lOv" secondAttribute="firstBaseline" id="QKc-3X-Q9u"/>
                                         <constraint firstItem="cAx-bn-DzX" firstAttribute="leading" secondItem="rqM-u6-JEf" secondAttribute="leadingMargin" constant="12" id="WJW-z0-ZXs"/>
                                         <constraint firstItem="cAx-bn-DzX" firstAttribute="baseline" secondItem="gG0-WW-lOv" secondAttribute="baseline" id="tDh-jW-KKG"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JvJ-Ax-rDg" kind="show" identifier="playlistDetail" id="2Ql-bs-r9A"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -61,6 +64,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHx-dx-dxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="556" y="101"/>
+        </scene>
+        <!--Playlist Detail Table View Controller-->
+        <scene sceneID="uma-b5-DRF">
+            <objects>
+                <tableViewController id="JvJ-Ax-rDg" customClass="AKZPlaylistDetailTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="eaP-Sx-mFP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistDetailCell" rowHeight="105" id="jSI-ip-5vh">
+                                <rect key="frame" x="0.0" y="92" width="600" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jSI-ip-5vh" id="HTW-Pc-hOR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JvJ-Ax-rDg" id="f28-hE-xn7"/>
+                            <outlet property="delegate" destination="JvJ-Ax-rDg" id="YQV-Qn-sGB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zfd-KL-Ny1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hkb-nk-W5A">

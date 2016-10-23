@@ -6,20 +6,21 @@
 //  Copyright © 2016 Spyridon Chatzikotoulas. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AKZPlaylistTableViewController.h"
 #import "AKZGetResultsResponse.h"
 #import "AKZSessionManager.h"
 #import "AKZResults.h"
+#import "AKZPlaylistDetailTableViewController.h"
 #import "SVProgressHUD.h"
 
 
-@interface ViewController ()
+@interface AKZPlaylistTableViewController ()
 
 @property(nonatomic, strong)NSArray *playlistItems;
 
 @end
 
-@implementation ViewController
+@implementation AKZPlaylistTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,12 +69,21 @@
     
     UILabel *playlistName = [cell.contentView viewWithTag:1];
     UILabel *itemCount = [cell.contentView viewWithTag:2];
-    playlistName.text = playlist.Name;
-    itemCount.text = playlist.ItemCount.stringValue;
+    playlistName.text = [@"Playlist: " stringByAppendingString:playlist.name];
+    itemCount.text = [playlist.itemCount.stringValue stringByAppendingString:@" tracks"];
     
     cell.tag = indexPath.row;
     
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    AKZResults *playlistTapped = self.playlistItems[[sender tag]];
+    
+    if([segue.identifier isEqualToString:@"playlistDetail"]){
+        AKZPlaylistDetailTableViewController *controller = (AKZPlaylistDetailTableViewController *)segue.destinationViewController;
+        controller.playlistDetail = playlistTapped;
+    }
 }
 
 @end

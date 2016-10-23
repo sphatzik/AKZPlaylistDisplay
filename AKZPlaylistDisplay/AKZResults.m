@@ -12,20 +12,20 @@
 
 +(NSDictionary *)JSONKeyPathsByPropertyKey{
     return @{
-             @"ObjectType" : @"ObjectType",
-             @"DateUpdated" : @"DateUpdated",
-             @"Duration" : @"Duration",
-             @"FanCount" : @"FanCount",
-             @"IsOwner" : @"IsOwner",
-             @"ItemCount" : @"ItemCount",
-             @"LargePhotoUrl" : @"LargePhotoUrl",
-             @"Name" : @"Name",
-             @"OwnerId" : @"OwnerId",
-             @"OwnerNickName" : @"OwnerNickName",
-             @"OwnerPhotoUrl" : @"OwnerPhotoUrl",
-             @"PhotoUrl" : @"PhotoUrl",
-             @"PlaylistId" : @"PlaylistId",
-             @"ViewerIsFan" : @"ViewerIsFan"
+             @"objectType" : @"ObjectType",
+             @"dateUpdated" : @"DateUpdated",
+             @"duration" : @"Duration",
+             @"fanCount" : @"FanCount",
+             @"isOwner" : @"IsOwner",
+             @"itemCount" : @"ItemCount",
+             @"largePhotoUrl" : @"LargePhotoUrl",
+             @"name" : @"Name",
+             @"ownerId" : @"OwnerId",
+             @"ownerNickName" : @"OwnerNickName",
+             @"ownerPhotoUrl" : @"OwnerPhotoUrl",
+             @"photoUrl" : @"PhotoUrl",
+             @"playlistId" : @"PlaylistId",
+             @"viewerIsFan" : @"ViewerIsFan"
              };
 }
 
