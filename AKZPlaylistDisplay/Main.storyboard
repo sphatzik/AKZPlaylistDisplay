@@ -69,17 +69,68 @@
         <scene sceneID="uma-b5-DRF">
             <objects>
                 <tableViewController id="JvJ-Ax-rDg" customClass="AKZPlaylistDetailTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="eaP-Sx-mFP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="189" sectionHeaderHeight="28" sectionFooterHeight="28" id="eaP-Sx-mFP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistDetailCell" rowHeight="105" id="jSI-ip-5vh">
-                                <rect key="frame" x="0.0" y="92" width="600" height="105"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistDetailCell" rowHeight="189" id="jSI-ip-5vh">
+                                <rect key="frame" x="0.0" y="92" width="600" height="189"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jSI-ip-5vh" id="HTW-Pc-hOR">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="188"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1y-D3-aEJ">
+                                            <rect key="frame" x="214" y="40" width="300" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="LHu-qV-1co"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAg-4v-qga">
+                                            <rect key="frame" x="214" y="113" width="300" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="NRN-a0-aVd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="centerY" secondItem="HTW-Pc-hOR" secondAttribute="centerY" constant="49" id="0Fl-gO-iB7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="i1y-D3-aEJ" secondAttribute="trailing" constant="78" id="31X-PJ-jO0"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="trailing" secondItem="i1y-D3-aEJ" secondAttribute="trailing" id="4Qv-sN-cDQ"/>
+                                        <constraint firstItem="i1y-D3-aEJ" firstAttribute="leading" secondItem="HTW-Pc-hOR" secondAttribute="leadingMargin" constant="206" id="8c5-Zt-LP9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aAg-4v-qga" secondAttribute="trailing" constant="78" id="D84-va-BX1"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="leading" secondItem="i1y-D3-aEJ" secondAttribute="leading" id="FMY-Nu-iTY"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="top" secondItem="i1y-D3-aEJ" secondAttribute="bottom" constant="17" id="IFk-fg-lgl"/>
+                                        <constraint firstItem="i1y-D3-aEJ" firstAttribute="top" secondItem="HTW-Pc-hOR" secondAttribute="topMargin" constant="32" id="Kas-bl-0fF"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aAg-4v-qga" secondAttribute="trailing" constant="78" id="KhT-Vl-z9t"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aAg-4v-qga" secondAttribute="trailing" constant="78" id="MEY-Be-lY0"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="top" secondItem="i1y-D3-aEJ" secondAttribute="bottom" constant="13" id="Ofi-LT-JJa"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="leading" secondItem="HTW-Pc-hOR" secondAttribute="leadingMargin" constant="206" id="Tb7-Zp-RCB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="aAg-4v-qga" secondAttribute="bottom" constant="7" id="UYM-Tg-JPa"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="top" secondItem="i1y-D3-aEJ" secondAttribute="bottom" constant="14" id="dHE-GZ-R4j"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="top" secondItem="i1y-D3-aEJ" secondAttribute="bottom" constant="14" id="hg0-ju-IgU"/>
+                                        <constraint firstItem="aAg-4v-qga" firstAttribute="top" secondItem="i1y-D3-aEJ" secondAttribute="bottom" constant="12" id="qJB-2Z-N6b"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="8c5-Zt-LP9"/>
+                                            <exclude reference="0Fl-gO-iB7"/>
+                                            <exclude reference="KhT-Vl-z9t"/>
+                                            <exclude reference="MEY-Be-lY0"/>
+                                            <exclude reference="Ofi-LT-JJa"/>
+                                            <exclude reference="Tb7-Zp-RCB"/>
+                                            <exclude reference="dHE-GZ-R4j"/>
+                                            <exclude reference="hg0-ju-IgU"/>
+                                            <exclude reference="qJB-2Z-N6b"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

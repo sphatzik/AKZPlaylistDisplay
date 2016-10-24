@@ -50,7 +50,7 @@
 -(void)getItemsForPlaylist:(AKZResults *)playlistDetail
                    success:(void (^)(AKZGetItemsResponse *))success
                    failure:(void (^)(NSError *))failure{
-    [self GET:@"playlists"
+    [self GET:@"playlist"
    parameters:@{@"playlistid" : playlistDetail.playlistId}
      progress:^(NSProgress * _Nonnull downloadProgress) {
          

@@ -10,8 +10,11 @@
 #import "AKZSessionManager.h"
 #import "SVProgressHUD.h"
 #import "AKZGetItemsResponse.h"
+#import "AKZItems.h"
 
 @interface AKZPlaylistDetailTableViewController ()
+
+@property(nonatomic, strong)NSArray *playlistDetailItems;
 
 @end
 
@@ -21,19 +24,17 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"Playlist Detail";
-    [SVProgressHUD showWithStatus:@"Loading Playlists"];
-    
+    [SVProgressHUD showWithStatus:@"Loading Playlists"];    
     
     [[AKZSessionManager sharedManager] getItemsForPlaylist:self.playlistDetail success:^(AKZGetItemsResponse *response) {
         [SVProgressHUD dismiss];
-        NSLog(@"Playlist Detail: %@",response.result);
+        self.playlistDetailItems = response.items;
+        [self.tableView reloadData];
+        NSLog(@"Print Result %@",response.items);
     } failure:^(NSError *error) {
         [SVProgressHUD dismiss];
         NSLog(@"Got Error %@",error);
-
     }];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,56 +45,34 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.playlistDetailItems.count;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewAutomaticDimension;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"playlistDetailCell" forIndexPath:indexPath];
     
-
+    static NSString *identifier = @"playlistDetailCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    AKZItems *playlist = self.playlistDetailItems[indexPath.row];
+    
+    UILabel *trackName = [cell.contentView viewWithTag:1];
+    UILabel *artistName = [cell.contentView viewWithTag:2];
+    
+    trackName.text = [@"Track: " stringByAppendingString:playlist.trackName];
+    artistName.text =[@"Artist: " stringByAppendingString:playlist.artistName];
+    
+    cell.tag = indexPath.row;
+    
     return cell;
 }
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

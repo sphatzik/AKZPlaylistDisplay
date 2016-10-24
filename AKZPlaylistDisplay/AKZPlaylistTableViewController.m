@@ -25,8 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Akazoo Playlists";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
+
     [SVProgressHUD showWithStatus:@"Loading Playlists"];
-    
     
     [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
         [SVProgressHUD dismiss];
