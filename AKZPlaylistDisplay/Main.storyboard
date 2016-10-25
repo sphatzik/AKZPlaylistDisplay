@@ -59,7 +59,13 @@
                             <outlet property="delegate" destination="I1k-pR-c22" id="J0a-Lg-pWx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="xei-Wj-b7q"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="xei-Wj-b7q">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="gjO-A8-Wye">
+                            <connections>
+                                <action selector="fetchFromWebServiceButton:" destination="I1k-pR-c22" id="guV-0m-tNn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHx-dx-dxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

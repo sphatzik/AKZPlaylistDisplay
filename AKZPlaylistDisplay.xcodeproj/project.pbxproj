@@ -108,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123E92831DBFD4D100CF2D3E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1241E86F1DBFB269003ABB0C /* AKZCell.h */,
+				1241E8701DBFB269003ABB0C /* AKZCell.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		125E537B1DB924EF00D51D2D = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +142,7 @@
 		125E53861DB924EF00D51D2D /* AKZPlaylistDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				123E92831DBFD4D100CF2D3E /* Helpers */,
 				12D7FE311DB926E500BFF096 /* Network */,
 				12D7FE301DB926DB00BFF096 /* Views */,
 				12D7FE2F1DB9268100BFF096 /* Resources */,
@@ -190,8 +200,6 @@
 				125E538E1DB924EF00D51D2D /* AKZPlaylistTableViewController.m */,
 				12A65A891DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.h */,
 				12A65A8A1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m */,
-				1241E86F1DBFB269003ABB0C /* AKZCell.h */,
-				1241E8701DBFB269003ABB0C /* AKZCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";

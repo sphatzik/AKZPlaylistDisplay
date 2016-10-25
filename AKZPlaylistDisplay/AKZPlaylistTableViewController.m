@@ -15,7 +15,6 @@
 
 
 @interface AKZPlaylistTableViewController ()
-
 @property(nonatomic, strong)NSArray *playlistItems;
 
 @end
@@ -26,19 +25,29 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Akazoo Playlists";
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
-
+    
     [SVProgressHUD showWithStatus:@"Loading Playlists"];
+    NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
     
-    [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
+    if([currentDefaults objectForKey:@"playlistcollection"]){
         [SVProgressHUD dismiss];
-        self.playlistItems = response.result;
-        NSLog(@"Print Result %@",response.result);
+        NSData *data = [currentDefaults objectForKey:@"playlistcollection"];
+        self.playlistItems = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         [self.tableView reloadData];
-    } failure:^(NSError *error) {
-        [SVProgressHUD dismiss];
-        NSLog(@"Got Error %@",error);
-    }];
-    
+    }
+    else{
+        [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
+            [SVProgressHUD dismiss];
+            self.playlistItems = response.result;
+            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.playlistItems];
+            [currentDefaults setObject:data forKey:@"playlistcollection"];
+            
+            [self.tableView reloadData];
+        } failure:^(NSError *error) {
+            [SVProgressHUD dismiss];
+            NSLog(@"Got Error %@",error);
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,6 +94,22 @@
         AKZPlaylistDetailTableViewController *controller = (AKZPlaylistDetailTableViewController *)segue.destinationViewController;
         controller.playlistDetail = playlistTapped;
     }
+}
+- (IBAction)fetchFromWebServiceButton:(id)sender {
+    
+    [SVProgressHUD showWithStatus:@"Loading Playlists"];
+    NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+    
+    [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
+        [SVProgressHUD dismiss];
+        self.playlistItems = response.result;
+        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.playlistItems];
+        [currentDefaults setObject:data forKey:@"playlistcollection"];
+        [self.tableView reloadData];
+    } failure:^(NSError *error) {
+        [SVProgressHUD dismiss];
+        NSLog(@"Got Error %@",error);
+    }];
 }
 
 @end
