@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1241E8711DBFB269003ABB0C /* AKZCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1241E8701DBFB269003ABB0C /* AKZCell.m */; };
 		125E53891DB924EF00D51D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E53881DB924EF00D51D2D /* main.m */; };
 		125E538C1DB924EF00D51D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538B1DB924EF00D51D2D /* AppDelegate.m */; };
 		125E538F1DB924EF00D51D2D /* AKZPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125E538E1DB924EF00D51D2D /* AKZPlaylistTableViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1241E86F1DBFB269003ABB0C /* AKZCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKZCell.h; sourceTree = "<group>"; };
+		1241E8701DBFB269003ABB0C /* AKZCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKZCell.m; sourceTree = "<group>"; };
 		125E53841DB924EF00D51D2D /* AKZPlaylistDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKZPlaylistDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E53881DB924EF00D51D2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		125E538A1DB924EF00D51D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				125E538E1DB924EF00D51D2D /* AKZPlaylistTableViewController.m */,
 				12A65A891DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.h */,
 				12A65A8A1DBCBE7900831F41 /* AKZPlaylistDetailTableViewController.m */,
+				1241E86F1DBFB269003ABB0C /* AKZCell.h */,
+				1241E8701DBFB269003ABB0C /* AKZCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				125E53891DB924EF00D51D2D /* main.m in Sources */,
 				12D7FE3A1DB92C7F00BFF096 /* AKZGetResultsResponse.m in Sources */,
 				12D7FE341DB9295700BFF096 /* AKZResults.m in Sources */,
+				1241E8711DBFB269003ABB0C /* AKZCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

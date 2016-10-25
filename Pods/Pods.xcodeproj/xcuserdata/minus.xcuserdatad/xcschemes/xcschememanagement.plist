@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JAFontAwesome.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,16 +57,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>114BB894DB706E8247493CCA8EA458E8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3773F63F6D39E558E8DB2B3C77EA7858</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>426BC4549A625B5E1E4200D5261A98BF</key>
 		<dict>
 			<key>primary</key>
@@ -67,22 +67,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4E896F837DDA62F2BB92182CD824B316</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>566C086106C06BF1567D54A105BCF36C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6424F6AE6C3C4F95C79B529371123F05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4365B14D449D2DAD617D8689AC460E9</key>
+		<key>DB51E0A9453042C5D4996B91A6C27308</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0947D4B3B5E6AACF05BF00137B80D40</key>
+		<key>E3CC624A77A54B8CCC0B444554EDC651</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F14B566E6916F3D4DB6E142A0275C366</key>
+		<key>EF55707CDE7C3E462746CC0E2E11D98A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF2CD40A41E4FCB6FC1AE83408527F08</key>
 		<dict>
 			<key>primary</key>
 			<true/>

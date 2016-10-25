@@ -7,6 +7,8 @@ pod 'AFNetworking'
 pod 'SVProgressHUD'
 pod 'Mantle'
 pod 'Nimbus/WebController'
+pod 'SDWebImage'
+pod 'JAFontAwesome'
 
 target 'AKZPlaylistDisplay' do
 
