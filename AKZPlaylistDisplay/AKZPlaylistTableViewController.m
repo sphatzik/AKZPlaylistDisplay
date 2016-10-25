@@ -101,7 +101,6 @@
     NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
     
     [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
-        [SVProgressHUD dismiss];
         self.playlistItems = response.result;
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.playlistItems];
         [currentDefaults setObject:data forKey:@"playlistcollection"];
@@ -110,6 +109,14 @@
         [SVProgressHUD dismiss];
         NSLog(@"Got Error %@",error);
     }];
+    
+    double delayInSeconds = 1.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [SVProgressHUD dismiss];
+    });
+    
+    [self.tableView setContentOffset:CGPointMake(0, -self.tableView.contentInset.top) animated:YES];
 }
 
 @end
