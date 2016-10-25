@@ -2,7 +2,7 @@
 //  ViewController.m
 //  AKZPlaylistDisplay
 //
-//  Created by minus one on 20/10/16.
+//  Created by sphatzik on 20/10/16.
 //  Copyright © 2016 Spyridon Chatzikotoulas. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 
 @interface AKZPlaylistTableViewController ()
+
 @property(nonatomic, strong)NSArray *playlistItems;
 
 @end

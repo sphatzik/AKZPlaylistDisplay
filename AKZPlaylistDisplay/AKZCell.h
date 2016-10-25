@@ -2,7 +2,7 @@
 //  AKZCell.h
 //  AKZPlaylistDisplay
 //
-//  Created by minus one on 25/10/16.
+//  Created by sphatzik on 25/10/16.
 //  Copyright © 2016 Spyridon Chatzikotoulas. All rights reserved.
 //
 
