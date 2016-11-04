@@ -23,6 +23,8 @@
     return _sharedManager;
 }
 
+// Retrieve List of the Playlist
+
 -(void)getResults:(void (^)(AKZGetResultsResponse *))success
           failure:(void (^)(NSError *))failure{
     [self GET:@"playlists"
@@ -45,7 +47,7 @@
      }];
 }
 
-
+//Retrieve Items that a specific playlist contains
 
 -(void)getItemsForPlaylist:(AKZResults *)playlistDetail
                    success:(void (^)(AKZGetItemsResponse *))success

@@ -30,14 +30,14 @@
     [SVProgressHUD showWithStatus:@"Loading Playlists"];
     NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
     
-    if([currentDefaults objectForKey:@"playlistcollection"]){
+    if([currentDefaults objectForKey:@"playlistcollection"]){ //Retieve the list from the User defaults
         [SVProgressHUD dismiss];
         NSData *data = [currentDefaults objectForKey:@"playlistcollection"];
         self.playlistItems = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         [self.tableView reloadData];
     }
     else{
-        [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) {
+        [[AKZSessionManager sharedManager]getResults:^(AKZGetResultsResponse *response) { //Network call to retrieve the list
             [SVProgressHUD dismiss];
             self.playlistItems = response.result;
             NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.playlistItems];
